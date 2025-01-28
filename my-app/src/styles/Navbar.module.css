@@ -1,5 +1,4 @@
 /* src/styles/Navbar.module.css */
-
 .navbar {
     position: sticky;
     top: 0;
@@ -11,11 +10,10 @@
     padding: 10px 20px;
     z-index: 1000;
     display: flex;
-    justify-content: space-between; /* Align the logo, nav, and button to the ends */
     align-items: center;
+    justify-content: space-between;
   }
   
-  /* Container for the navbar content */
   .container {
     display: flex;
     justify-content: space-between;
@@ -25,19 +23,16 @@
     margin: 0 auto;
   }
   
-  /* Logo styling */
   .logo {
     cursor: pointer;
   }
   
-  /* Navbar wrapper (links and button) */
   .navWrapper {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between the links and the "Get a Quote" button */
+    gap: 20px;
   }
   
-  /* Navbar links list */
   .navLinks {
     list-style: none;
     display: flex;
@@ -48,7 +43,6 @@
     display: inline;
   }
   
-  /* Link styling */
   .link {
     text-decoration: none;
     background-color: white;
@@ -59,74 +53,63 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  /* Hover effect for links */
   .link:hover {
     background-color: black;
     color: white;
   }
   
-  /* "Get a Quote" button styling */
   .quoteButton {
     text-decoration: none;
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 5px;
     font-size: 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
-    white-space: nowrap; /* Prevent text from wrapping */
   }
   
-  /* Hover effect for "Get a Quote" button */
   .quoteButton:hover {
     background-color: white;
     color: black;
   }
   
-  /* Hamburger Menu */
+  /* Hamburger menu for mobile */
   .hamburgerMenu {
-    display: none; /* Initially hide the hamburger */
+    display: none;
     cursor: pointer;
   }
   
-  .hamburgerMenu svg {
-    color: black;
-  }
-  
-  /* Mobile responsive styles */
   @media (max-width: 768px) {
-    .hamburgerMenu {
-      display: block; /* Show hamburger menu on mobile */
-    }
-  
+    /* Hide the navigation links and "Get a Quote" button by default on mobile */
     .navWrapper {
-      display: flex;
+      display: none;
       flex-direction: column;
-      gap: 15px;
-      align-items: center;
       position: absolute;
-      top: 70px;
-      left: 0;
+      top: 80px;
       right: 0;
       background-color: white;
-      padding: 20px;
-      display: none;
       width: 100%;
+      z-index: 1000;
     }
   
     .navWrapper.active {
-      display: block; /* Show menu when active */
+      display: flex;
+    }
+  
+    .hamburgerMenu {
+      display: block;
     }
   
     .navLinks {
       display: flex;
-      flex-direction: column; /* Stack the nav links vertically */
+      flex-direction: column;
+      width: 100%;
       gap: 10px;
     }
   
-    /* Hide "Get a Quote" button on mobile */
     .quoteButton {
-      display: none;
+      width: 100%;
+      text-align: center;
     }
   }
   

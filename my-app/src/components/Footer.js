@@ -31,10 +31,10 @@ export default function Footer() {
           <h3>Contact Us</h3>
           <div>
             <div>
-              <FaEnvelope /> <span>Email: info@otomex.com</span>
+              <FaEnvelope /> <span>Email: otomexinnovations@gmail.com</span>
             </div>
             <div>
-              <FaPhoneAlt /> <span>Cell: +27 123 456 789</span>
+              <FaPhoneAlt /> <span>Cell: (+27)72 892 1928 </span>
             </div>
           </div>
 

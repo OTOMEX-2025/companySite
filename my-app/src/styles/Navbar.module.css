@@ -1,0 +1,132 @@
+/* src/styles/Navbar.module.css */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect for the glass look */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for depth */
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Align the logo, nav, and button to the ends */
+    align-items: center;
+  }
+  
+  /* Container for the navbar content */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo styling */
+  .logo {
+    cursor: pointer;
+  }
+  
+  /* Navbar wrapper (links and button) */
+  .navWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the links and the "Get a Quote" button */
+  }
+  
+  /* Navbar links list */
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Space between links */
+  }
+  
+  .navLinks li {
+    display: inline;
+  }
+  
+  /* Link styling */
+  .link {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  .link:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* "Get a Quote" button styling */
+  .quoteButton {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  /* Hover effect for "Get a Quote" button */
+  .quoteButton:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Hamburger Menu */
+  .hamburgerMenu {
+    display: none; /* Initially hide the hamburger */
+    cursor: pointer;
+  }
+  
+  .hamburgerMenu svg {
+    color: black;
+  }
+  
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    .hamburgerMenu {
+      display: block; /* Show hamburger menu on mobile */
+    }
+  
+    .navWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background-color: white;
+      padding: 20px;
+      display: none;
+      width: 100%;
+    }
+  
+    .navWrapper.active {
+      display: block; /* Show menu when active */
+    }
+  
+    .navLinks {
+      display: flex;
+      flex-direction: column; /* Stack the nav links vertically */
+      gap: 10px;
+    }
+  
+    /* Hide "Get a Quote" button on mobile */
+    .quoteButton {
+      display: none;
+    }
+  }
+  

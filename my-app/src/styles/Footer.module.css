@@ -1,0 +1,112 @@
+/* src/styles/Footer.module.css */
+
+.footer {
+    background-color: #ffffff; /* Light background for the footer */
+    padding: 40px 20px;
+    color: black;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .footerSection {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footerSection h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .footerLinks {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerLinks li {
+    margin-bottom: 10px;
+  }
+  
+  .footerLinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footerLinks a:hover {
+    color: #0073e6; /* Hover effect on links */
+  }
+  
+  .footerSocials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .footerSocials a {
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footerSocials a:hover {
+    color: #0073e6; /* Hover effect on social icons */
+  }
+  
+  .horizontalLine {
+    border-top: 1px solid #dcdcdc; /* Thin horizontal line */
+    margin: 20px 0;
+  }
+  
+  .copyrightSection {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column; /* Stack sections vertically on mobile */
+      align-items: center;
+    }
+  
+    .footerSection {
+      margin-right: 0; /* Remove right margin */
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .footerSocials {
+      justify-content: center; /* Align social icons horizontally */
+      margin-top: 15px;
+    }
+  
+    .footerLinks a {
+      font-size: 0.9rem; /* Slightly smaller font size for mobile */
+    }
+  
+    .footerSection h3 {
+      font-size: 1.25rem; /* Smaller heading for mobile */
+    }
+  
+    .copyrightSection {
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+  
+    .horizontalLine {
+      margin: 10px 0;
+    }
+  }
+  

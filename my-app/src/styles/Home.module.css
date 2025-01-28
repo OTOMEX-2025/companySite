@@ -1,0 +1,159 @@
+/* src/styles/Home.module.css */
+
+.main {
+    font-family: Arial, sans-serif;
+    color: #000000;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 80vh;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Dark overlay */
+      url("/WhatsApp Image 2025-01-28 at 06.37.18.jpeg") no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .heroContent {
+    max-width: 600px;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .heroButton {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .heroButton:hover {
+    background: #444;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 50px 20px;
+    background: #ffffff;
+  }
+  
+  .servicesHeading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .servicesWrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Service Card */
+  .serviceCard {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align everything to the left */
+  }
+  
+  .serviceCard .icon {
+    color: black; /* Black icons */
+    font-size: 30px;
+    margin-bottom: 15px; /* Add spacing between icon and heading */
+  }
+  
+  .serviceCard h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .serviceCard p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #353333;
+  }
+  
+  .learnMore {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .learnMore:hover {
+    background: black;
+    color: white;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero {
+      height: 60vh; /* Adjust the height of the hero section on mobile */
+    }
+  
+    .heading {
+      font-size: 2rem; /* Smaller heading on mobile */
+    }
+  
+    .description {
+      font-size: 1rem; /* Adjust description font size */
+    }
+  
+    .heroButton {
+      padding: 8px 16px; /* Adjust button padding */
+      font-size: 0.9rem; /* Smaller button font size */
+    }
+  
+    .servicesHeading {
+      font-size: 1.5rem; /* Smaller heading for services section */
+    }
+  
+    .servicesWrapper {
+      flex-direction: column; /* Stack service cards vertically on mobile */
+      align-items: center;
+    }
+  
+    .serviceCard {
+      width: 90%; /* Make the service cards take more width on mobile */
+      margin-bottom: 20px; /* Add space between cards */
+    }
+  
+    .serviceCard h3 {
+      font-size: 1rem; /* Smaller heading for services */
+    }
+  
+    .serviceCard p {
+      font-size: 0.9rem; /* Smaller text for services on mobile */
+    }
+  
+    .learnMore {
+      font-size: 0.8rem; /* Smaller button text */
+    }
+  }
+  

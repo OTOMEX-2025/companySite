@@ -1,0 +1,80 @@
+/* Container */
+.aboutContainer {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section 1: About Otomex Innovations */
+  .aboutSection {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .aboutSection h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .aboutSection p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Section 2: Our Core Values */
+  .valuesSection {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .valuesSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .valuesGrid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .valueCard {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 50px; /* Bigger Icons */
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  /* Section 3: Meet Our Founders */
+  .foundersSection {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .foundersSection h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .foundersSection p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  

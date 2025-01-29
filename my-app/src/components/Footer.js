@@ -23,7 +23,12 @@ export default function Footer() {
         {/* Services Section */}
         <div className={styles.footerSection}>
           <h3>Our Services</h3>
-          <p>We'll be adding more details about our services soon!</p>
+          <ul>
+            <li>Website Creation</li>
+            <li>Website Maintenance</li>
+            <li>Project Facilitation</li>
+
+          </ul>
         </div>
 
         {/* Contact and Social Media Section */}
@@ -31,10 +36,11 @@ export default function Footer() {
           <h3>Contact Us</h3>
           <div>
             <div>
-              <FaEnvelope /> <span>Email: otomexinnovations@gmail.com</span>
+              <FaEnvelope /> <span> otomexinnovations@gmail.com</span>
             </div>
+            <br/>
             <div>
-              <FaPhoneAlt /> <span>Cell: (+27)72 892 1928 </span>
+              <FaPhoneAlt /> <span>(+27)72 892 1928 </span>
             </div>
           </div>
 
@@ -44,7 +50,7 @@ export default function Footer() {
         <div className={styles.footerSection}>
         <h3>Follow Us</h3>
           <div className={styles.footerSocials}>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/otomex-innovations/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">

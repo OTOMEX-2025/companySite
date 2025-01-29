@@ -2,7 +2,7 @@
 import styles from "../styles/Home.module.css"; // Import CSS Module
 import { FaLaptopCode, FaTools, FaProjectDiagram } from "react-icons/fa"; // React Icons
 import Link from "next/link"; // Import Link for navigation
-import Footer from "@/components/Footer";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (

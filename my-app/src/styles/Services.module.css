@@ -1,0 +1,169 @@
+
+.servicesPage {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    background: #ffffff;
+    padding: 0; 
+    margin: 0;
+}
+
+
+.hero {
+    height: 30vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.horizontalLine {
+    width: 80%;
+    border-top: 1px solid #dcdcdc;
+    margin: 10px auto; 
+}
+
+
+.services {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0; 
+}
+
+
+.serviceRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px; 
+}
+
+
+.textContent {
+    flex: 1;
+}
+
+.icon {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.textContent h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.textContent p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+
+.serviceList {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.serviceList li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.checkIcon {
+    color: #28a745;
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+
+.imageWrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageWrapper img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .services {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .serviceRow {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .textContent {
+        order: 2;
+    }
+
+    .imageWrapper {
+        order: 1;
+    }
+
+    .imageWrapper img {
+        max-width: 100%;
+    }
+
+    .services {
+        max-width: 100%;
+    }
+}

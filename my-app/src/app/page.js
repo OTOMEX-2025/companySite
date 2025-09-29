@@ -17,7 +17,7 @@ export default function Home() {
             Otomex Innovations delivers cutting-edge solutions tailored to your
             business needs.
           </p>
-          <Link href="/contact">
+          <Link href="/services">
           <button className={styles.heroButton}>Start Your Journey Today</button>
           </Link>
         </div>
@@ -35,7 +35,7 @@ export default function Home() {
               We design and develop modern, responsive websites tailored to your
               business.
             </p>
-            <Link href="/contact">
+            <Link href="/services">
               <button className={styles.learnMore}>Learn More</button>
             </Link>
           </div>
@@ -47,7 +47,7 @@ export default function Home() {
               Ensure your website stays updated and functional with our
               maintenance services.
             </p>
-            <Link href="/contact">
+            <Link href="/services">
               <button className={styles.learnMore}>Learn More</button>
             </Link>
           </div>

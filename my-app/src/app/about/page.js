@@ -2,9 +2,9 @@
 import { RiSpaceShipLine } from "react-icons/ri"; // Innovation Icon
 import { FaPeopleLine } from "react-icons/fa6"; // Community Icon
 import { GiBullseye } from "react-icons/gi"; // Excellence Icon
+import { FaBrain, FaComments, FaVideo, FaGamepad, FaMusic } from "react-icons/fa"; // MindPal Features Icons
 import Footer from "../../components/Footer";
 import styles from "../../styles/About.module.css";
-
 
 export default function About() {
   return (
@@ -67,9 +67,70 @@ export default function About() {
           positive change in the tech industry.
         </p>
       </section>
-      <Footer/>
 
+      {/* Section 4: MindPal Project */}
+      <section className={styles.mindpalSection}>
+        <h2>MindPal – Your AI-Powered Companion</h2>
+        <p>
+          As part of our journey, we are building <strong>MindPal</strong>, an innovative AI-driven 
+          platform designed to support mental wellness, productivity, and personal growth. 
+          MindPal is more than just an app – it’s a smart companion that helps you stay connected, 
+          informed, and balanced in your everyday life.
+        </p>
+
+        <div className={styles.valuesGrid}>
+          {/* Feature 1: AI Chat */}
+          <div className={styles.valueCard}>
+            <FaBrain className={styles.icon} />
+            <h2>AI Chat</h2>
+            <p>
+              Engage in meaningful conversations with an AI assistant that provides support, 
+              insights, and companionship.
+            </p>
+          </div>
+
+          {/* Feature 2: Meetings */}
+          <div className={styles.valueCard}>
+            <FaVideo className={styles.icon} />
+            <h2>Meetings</h2>
+            <p>
+              Host or join virtual meetings seamlessly within the platform to collaborate 
+              with peers and professionals.
+            </p>
+          </div>
+
+          {/* Feature 3: Articles & Newsletters */}
+          <div className={styles.valueCard}>
+            <FaComments className={styles.icon} />
+            <h2>Articles & Newsletters</h2>
+            <p>
+              Access curated content on mental health, personal development, and technology trends.
+            </p>
+          </div>
+
+          {/* Feature 4: Games */}
+          <div className={styles.valueCard}>
+            <FaGamepad className={styles.icon} />
+            <h2>Games</h2>
+            <p>
+              Relax and recharge with interactive games designed to stimulate your mind 
+              and reduce stress.
+            </p>
+          </div>
+
+          {/* Feature 5: 8D Music */}
+          <div className={styles.valueCard}>
+            <FaMusic className={styles.icon} />
+            <h2>8D Music</h2>
+            <p>
+              Immerse yourself in calming 8D audio experiences crafted to enhance focus, 
+              relaxation, and mindfulness.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </main>
-    
   );
 }

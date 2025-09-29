@@ -6,6 +6,77 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  /* Section 4: MindPal */
+.mindpalSection {
+  text-align: center;
+  margin: 80px 0;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f9fafc, #eef3f8);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.mindpalSection h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #2E4053; /* industrial blue tone */
+}
+
+.mindpalSection p {
+  font-size: 1.2rem;
+  max-width: 850px;
+  margin: 0 auto 40px auto;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Use same grid system */
+.mindpalSection .valuesGrid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Feature cards */
+.mindpalSection .valueCard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 280px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mindpalSection .valueCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature icons */
+.mindpalSection .icon {
+  font-size: 45px;
+  color: rgb(60, 92, 234)/* highlight with your orange brand color */
+  margin-bottom: 15px;
+}
+
+/* Card headings */
+.mindpalSection .valueCard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #2E4053;
+}
+
+/* Card text */
+.mindpalSection .valueCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
   
   /* Section 1: About Otomex Innovations */
   .aboutSection {

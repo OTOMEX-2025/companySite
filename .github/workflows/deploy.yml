@@ -105,8 +105,12 @@ jobs:
         username: ${{ secrets.SERVER_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
+        script_timeout: 10m
         script: |
-          /home/ubuntu/scripts/deploy-app.sh "${{ env.APP_NAME }}" "${{ env.DOMAIN }}" "${{ env.PORT }}" "/tmp/deploy-package.zip"
+          set -e
+          echo "🚀 Starting deployment with timeout handling..."
+          timeout 8m /home/ubuntu/scripts/deploy-app.sh "${{ env.APP_NAME }}" "${{ env.DOMAIN }}" "${{ env.PORT }}" "/tmp/deploy-package.zip"
+          echo "✅ Deployment script completed"
           
     - name: Deployment success
       run: |
@@ -114,3 +118,4 @@ jobs:
         echo "🌐 Website: https://${{ env.DOMAIN }}"
         echo "📊 App: ${{ env.APP_NAME }}"
         echo "🚪 Port: ${{ env.PORT }}"
+

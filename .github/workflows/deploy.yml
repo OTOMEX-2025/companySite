@@ -107,3 +107,4 @@ jobs:
         key: ${{ secrets.SERVER_SSH_KEY }}
         script: |
           /home/ubuntu/scripts/deploy-app.sh "otomexx" "otomexx.co.za" "7014" "/var/www/otomexx.co.za/deployment-package.zip"
+        command_timeout: 30m  # Increase to 30 minutes

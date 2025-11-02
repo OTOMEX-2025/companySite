@@ -71,7 +71,7 @@ jobs:
           echo "Date: $(date)"
           /home/ubuntu/scripts/test-connection.sh
         
-    - name: Transfer deployment package
+    - name: Transfer deployment package with explicit SSH port
       uses: appleboy/scp-action@v0.1.4
       with:
         host: ${{ secrets.SERVER_HOST }}
@@ -114,5 +114,3 @@ jobs:
         echo "🌐 Website: https://${{ env.DOMAIN }}"
         echo "📊 App: ${{ env.APP_NAME }}"
         echo "🚪 Port: ${{ env.PORT }}"
-
-

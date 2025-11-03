@@ -1,4 +1,4 @@
-name: Deploy Otomex Innovations to EC2
+name: Deploy Otomex_Innovations to EC2
 
 on:
   push:
@@ -117,5 +117,6 @@ jobs:
         echo "🌐 Website: https://${{ env.DOMAIN }}"
         echo "📊 App: ${{ env.APP_NAME }}"
         echo "🚪 Port: ${{ env.PORT }}"
+
 
 
